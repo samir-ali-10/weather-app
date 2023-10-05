@@ -16,23 +16,25 @@ export default function Searching({ onSearchChange }) {
             return {
                 options: response.data.map(city => {
                     return {
-                        value: `${city.latitude} ${city.longitude}` ,
+                        value: `${city.latitude} ${city.longitude}`,
                         label: `${city.name}, ${city.countryCode}`,
                     }
                 })
             }
         })
-        .catch((err) => console.error(err))
+            .catch((err) => console.error(err))
 
     }
 
     return (
-        <AsyncPaginate
-            placeholder="Search for city"
-            debounceTimeout={600}
-            value={search}
-            onChange={handleOnChange}
-            loadOptions={loadOptions}
-        />
+        <div className="main">
+            <AsyncPaginate
+                placeholder="Search for city"
+                debounceTimeout={600}
+                value={search}
+                onChange={handleOnChange}
+                loadOptions={loadOptions}
+            />
+        </div>
     )
 }

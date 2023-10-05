@@ -1,6 +1,13 @@
+@import "./views/main";
 @import "./views/current-weather";
+@import "./views/forecast";
 
 .container {
     max-width: 1080px;
     margin: 20px auto;
+    padding: 0 20px;
+}
+
+p {
+    margin: 0;
 }
