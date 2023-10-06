@@ -27,7 +27,7 @@ export default function Searching({ onSearchChange }) {
     }
 
     return (
-        <div className="main">
+        <div>
             <AsyncPaginate
                 placeholder="Search for city"
                 debounceTimeout={600}

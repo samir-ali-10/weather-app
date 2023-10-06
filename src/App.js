@@ -32,10 +32,15 @@ function App() {
   console.log(forecast);
 
   return (
-    <div className="container">
-      <Searching onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather currentWeatherData={currentWeather} />}
-      {forecast && <Forecast forecastData={forecast}/>}
+    <div className="app">
+      <div className="main">
+        <div className="main_bg">
+          <img src="icons/main-bg.jpg" alt="main background" />
+        </div>
+        <Searching onSearchChange={handleOnSearchChange} />
+        {currentWeather && <CurrentWeather currentWeatherData={currentWeather} />}
+      </div>
+      {forecast && <Forecast forecastData={forecast} />}
     </div>
   );
 }

@@ -29,7 +29,6 @@
             flex: 1 1;
             text-align: right;
             margin-right: 20px;
-            font-size: 1.1rem;
         }
 
         .min_max {
@@ -62,5 +61,16 @@
                 font-weight: 600;
             }
         }
+    }
+}
+
+@media (max-width: 450px) {
+    // .forecast {
+    //     .daily_item {
+
+    //     }
+    // }
+    :root {
+        font-size: 12px;
     }
 }
